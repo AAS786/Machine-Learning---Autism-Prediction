@@ -1,8 +1,11 @@
-import streamlit as st
+import pandas as pd
 import numpy as np
-import pickle
+import pickle as pk
+import streamlit as st
+import os
 import warnings
-warnings.filterwarnings('ignore')
+
+warnings.filterwarnings("ignore")
 
 loaded_model = pickle.load(open('autism_model.sav','rb'))
 
